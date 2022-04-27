@@ -1,5 +1,7 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
+import HomeHero from "components/HomeHero";
+import HomeMain from "components/HomeMain";
 import type { NextPage } from "next";
 import styled from "styled-components";
 
@@ -7,7 +9,8 @@ const Home: NextPage = () => {
   return (
     <Container>
       <Header />
-      <div>Hello World.</div>
+      <HomeHero />
+      <HomeMain />
       <Footer />
     </Container>
   );
@@ -19,4 +22,5 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  width: 100vw;
 `;
