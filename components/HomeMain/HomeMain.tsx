@@ -1,8 +1,31 @@
-import { Button, Heading, Radio, Text } from "@chakra-ui/react";
-import React from "react";
+import { Button, Heading, Radio, RadioGroup, Text } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
 import styled from "styled-components";
 
+let framework = "gin";
+
 export default function HomeMain() {
+  const [framework, setFramework] = useState("gin");
+  const yamlTemplate = `# boot.yaml
+${framework}:
+  - name: rk-demo
+    port: 8080
+    enabled: true
+    prom:
+      enabled: true
+    middleware:
+      logging:
+        enabled: true
+      prom:
+        enabled: true
+`;
+
+  const handleOnChange = (value: string) => {
+    setFramework(value);
+  };
+
   return (
     <Container>
       <TitleContainer>
@@ -20,20 +43,24 @@ export default function HomeMain() {
           <Text fontSize="12px" color="gray.500">
             Please visite documentation for various plugins
           </Text>
-          <RadioButtonContainer>
-            <Radio value="1">gin-gonic/gin</Radio>
-            <Radio value="2">gRpc</Radio>
-            <Radio value="3">labstack/echo</Radio>
-            <Radio value="4">gogf/gf</Radio>
-            <Radio value="5">gofiber/fiber</Radio>
-            <Radio value="6">gorilla/mux</Radio>
-            <Radio value="7">zeromicro/go-zero</Radio>
-          </RadioButtonContainer>
-          <Button colorScheme="blue" width="100px">
+          <RadioGroupContainer defaultValue="gin" onChange={handleOnChange}>
+            <Radio value="gin">gin-gonic/gin</Radio>
+            <Radio value="grpc">gRpc</Radio>
+            <Radio value="echo">labstack/echo</Radio>
+            <Radio value="gf">gogf/gf</Radio>
+            <Radio value="fiber">gofiber/fiber</Radio>
+            <Radio value="mux">gorilla/mux</Radio>
+            <Radio value="zero">zeromicro/go-zero</Radio>
+          </RadioGroupContainer>
+          <Button colorScheme="blue" width="120px" size="sm">
             Create
           </Button>
         </LeftContent>
-        <RightContent></RightContent>
+        <RightContent>
+          <SyntaxHighlighter language="yaml" showLineNumbers style={atomDark}>
+            {yamlTemplate}
+          </SyntaxHighlighter>
+        </RightContent>
       </ContentContainer>
     </Container>
   );
@@ -44,13 +71,13 @@ const Container = styled.div`
   justify-items: center;
   gap: 2rem;
   padding: 40px 0;
-  text-align: center;
 `;
 
 const TitleContainer = styled.div`
   display: grid;
   gap: 2rem;
   width: 500px;
+  text-align: center;
 `;
 
 const ContentContainer = styled.div`
@@ -64,10 +91,10 @@ const LeftContent = styled.section`
 `;
 
 const RightContent = styled.section`
-  border: 1px solid black;
+  font-size: 14px;
 `;
 
-const RadioButtonContainer = styled.div`
+const RadioGroupContainer = styled(RadioGroup)`
   padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
