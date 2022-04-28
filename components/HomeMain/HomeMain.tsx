@@ -1,13 +1,13 @@
-import { Button, Heading, Radio, RadioGroup, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
-import styled from "styled-components";
+import { Button, Heading, Radio, RadioGroup, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
+import styled from 'styled-components';
 
-let framework = "gin";
+let framework = 'gin';
 
 export default function HomeMain() {
-  const [framework, setFramework] = useState("gin");
+  const [framework, setFramework] = useState('gin');
   const yamlTemplate = `# boot.yaml
 ${framework}:
   - name: rk-demo

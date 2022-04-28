@@ -1,6 +1,6 @@
-import { Button, ButtonGroup, Heading, Text } from "@chakra-ui/react";
-import React from "react";
-import styled from "styled-components";
+import { Button, ButtonGroup, Heading, Text } from '@chakra-ui/react';
+import React from 'react';
+import styled from 'styled-components';
 
 export default function HomeHero() {
   return (

@@ -1,18 +1,19 @@
+import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Footer() {
+export default function HomePlugins() {
   return (
     <Container>
-      <div>Opensource project maintained by rk-dev</div>
+      <Heading>Supported plugins</Heading>
     </Container>
   );
 }
 
 const Container = styled.div`
+  background-color: #f6f9fc;
+  padding: 2rem;
+  display: grid;
   width: 100vw;
-  height: 60px;
-  line-height: 60px;
   text-align: center;
-  background-color: var(--chakra-colors-gray-100);
 `;

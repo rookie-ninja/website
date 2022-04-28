@@ -1,9 +1,10 @@
-import Footer from "components/Footer";
-import Header from "components/Header";
-import HomeHero from "components/HomeHero";
-import HomeMain from "components/HomeMain";
-import type { NextPage } from "next";
-import styled from "styled-components";
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import HomeHero from 'components/HomeHero';
+import HomeMain from 'components/HomeMain';
+import HomePlugins from 'components/HomePlugins';
+import type { NextPage } from 'next';
+import styled from 'styled-components';
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Header />
       <HomeHero />
       <HomeMain />
+      <HomePlugins />
       <Footer />
     </Container>
   );
