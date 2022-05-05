@@ -45,7 +45,7 @@ ${framework}:
           </Text>
           <RadioGroupContainer defaultValue="gin" onChange={handleOnChange}>
             <Radio value="gin">gin-gonic/gin</Radio>
-            <Radio value="grpc">gRpc</Radio>
+            <Radio value="grpc">gRPC</Radio>
             <Radio value="echo">labstack/echo</Radio>
             <Radio value="gf">gogf/gf</Radio>
             <Radio value="fiber">gofiber/fiber</Radio>
