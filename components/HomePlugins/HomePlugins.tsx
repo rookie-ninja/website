@@ -96,6 +96,26 @@ export default function HomePlugins() {
         </LogoRow>
         <LogoRow>
           <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/swagger.svg"
+              alt="Swagger"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/prom.svg"
+              alt="Prometheus"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/rapi.svg"
+              alt="RapiDoc"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/pprof.svg"
+              alt="PPROF"
+          />
+          <ClickableLogo
             href="https://github.com/rookie-ninja/rk-entry"
             src="/images/viper.svg"
             alt="Viper"
@@ -109,6 +129,43 @@ export default function HomePlugins() {
             href="https://github.com/rookie-ninja/rk-entry"
             src="/images/tls.svg"
             alt="TLS"
+          />
+        </LogoRow>
+        <LogoRow>
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/gzip.svg"
+              alt="gzip"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/timeout.svg"
+              alt="Timeout"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/csrf.svg"
+              alt="CSRF"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/cors.svg"
+              alt="CORS"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/jwt.svg"
+              alt="JWT"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/auth.svg"
+              alt="Auth"
+          />
+          <ClickableLogo
+              href="https://github.com/rookie-ninja/rk-entry"
+              src="/images/trace.svg"
+              alt="trace"
           />
         </LogoRow>
       </LogoContainer>
