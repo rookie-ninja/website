@@ -13,6 +13,12 @@ ${framework}:
   - name: rk-demo
     port: 8080
     enabled: true
+    commonService:
+      enabled: true
+    sw:
+      enabled: true
+    docs:
+      enabled: true
     prom:
       enabled: true
     middleware:
