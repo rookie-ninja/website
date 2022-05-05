@@ -1,6 +1,7 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import HomeHero from 'components/HomeHero';
+import { HomeInvitation } from 'components/HomeInvitation';
 import HomeMain from 'components/HomeMain';
 import HomePlugins from 'components/HomePlugins';
 import type { NextPage } from 'next';
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <HomeHero />
       <HomeMain />
       <HomePlugins />
+      <HomeInvitation />
       <Footer />
     </Container>
   );

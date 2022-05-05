@@ -1,5 +1,6 @@
 import { Button, ButtonGroup, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 import styled from 'styled-components';
 
 export default function HomeHero() {
@@ -14,21 +15,27 @@ export default function HomeHero() {
         YAML.
       </Text>
       <ButtonGroup spacing="5">
-        <Button width="200px" colorScheme="teal">
-          Get Started
-        </Button>
-        <Button width="200px">GitHub</Button>
+        <a href="https://rkdev.info/">
+          <Button width="200px" colorScheme="teal">
+            Get Started
+          </Button>
+        </a>
+        <a href="https://github.com/rookie-ninja/rk-boot">
+          <Button width="200px" leftIcon={<FaGithub />}>
+            GitHub
+          </Button>
+        </a>
       </ButtonGroup>
     </Container>
   );
 }
 
 const Container = styled.div`
-  padding: 100px 0 50px 0;
+  padding: 4rem 0;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 3rem;
   justify-items: center;
-  height: 500px;
   width: 500px;
   text-align: center;
   border-bottom: 1px solid var(--chakra-colors-gray-200);
