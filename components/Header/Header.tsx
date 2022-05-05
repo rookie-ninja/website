@@ -15,7 +15,7 @@ export default function Header() {
         <Image src="/images/rk-icon.png" height={40} width={40} alt="RK-BOOT" />
         <p>RK-Boot</p>
       </LogoWrap>
-      <IntroWrap>Experience modulized golang microservice rk-boot!</IntroWrap>
+      <IntroWrap>Experience modulized golang microservice with rk-boot!</IntroWrap>
       <IconsContainer>
         <IconWrap
           href="https://github.com/rookie-ninja/rk-boot"
