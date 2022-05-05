@@ -17,7 +17,7 @@ export default function HomeInvitation() {
         Want a rk-boot core team member to speak at your next event? Invite us
         to create a memorable and engaging experience for your attendees.
       </Text>
-      <a href="mailto:lark@pointgoal.com">
+      <a href="mailto:lark@pointgoal.io">
         <Button colorScheme="teal">Invite us to speak</Button>
       </a>
     </Container>
