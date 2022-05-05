@@ -10,7 +10,9 @@ export default function Footer() {
 }
 
 const Container = styled.div`
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
+  min-width: 860px;
   height: 60px;
   line-height: 60px;
   text-align: center;

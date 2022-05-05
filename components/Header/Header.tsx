@@ -15,7 +15,9 @@ export default function Header() {
         <Image src="/images/rk-icon.png" height={40} width={40} alt="RK-BOOT" />
         <p>RK-Boot</p>
       </LogoWrap>
-      <IntroWrap>Experience modulized golang microservice with rk-boot!</IntroWrap>
+      <IntroWrap>
+        Experience modulized golang microservice with rk-boot!
+      </IntroWrap>
       <IconsContainer>
         <IconWrap
           href="https://github.com/rookie-ninja/rk-boot"
@@ -24,7 +26,11 @@ export default function Header() {
         >
           <AiOutlineGithub size="26px" />
         </IconWrap>
-        <IconWrap href="https://docs.rkdev.info/docs" target="_blank" rel="noreferrer">
+        <IconWrap
+          href="https://docs.rkdev.info/docs"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiOutlineFileText size="26px" />
         </IconWrap>
         <IconWrap href="mailto:lark@pointgoal.io">
@@ -44,7 +50,9 @@ export default function Header() {
 
 const Container = styled.div`
   padding: 0 2rem;
+  max-width: 100vw;
   width: 100vw;
+  min-width: 860px;
   display: grid;
   grid-template-columns: 150px auto 150px;
   justify-content: space-between;

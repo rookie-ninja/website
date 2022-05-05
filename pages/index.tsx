@@ -26,5 +26,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
+  min-width: 860px;
 `;

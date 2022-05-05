@@ -96,24 +96,24 @@ export default function HomePlugins() {
         </LogoRow>
         <LogoRow>
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/swagger.svg"
-              alt="Swagger"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/swagger.svg"
+            alt="Swagger"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/prom.svg"
-              alt="Prometheus"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/prom.svg"
+            alt="Prometheus"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/rapi.svg"
-              alt="RapiDoc"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/rapi.svg"
+            alt="RapiDoc"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/pprof.svg"
-              alt="PPROF"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/pprof.svg"
+            alt="PPROF"
           />
           <ClickableLogo
             href="https://github.com/rookie-ninja/rk-entry"
@@ -133,39 +133,39 @@ export default function HomePlugins() {
         </LogoRow>
         <LogoRow>
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/gzip.svg"
-              alt="gzip"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/gzip.svg"
+            alt="gzip"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/timeout.svg"
-              alt="Timeout"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/timeout.svg"
+            alt="Timeout"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/csrf.svg"
-              alt="CSRF"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/csrf.svg"
+            alt="CSRF"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/cors.svg"
-              alt="CORS"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/cors.svg"
+            alt="CORS"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/jwt.svg"
-              alt="JWT"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/jwt.svg"
+            alt="JWT"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/auth.svg"
-              alt="Auth"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/auth.svg"
+            alt="Auth"
           />
           <ClickableLogo
-              href="https://github.com/rookie-ninja/rk-entry"
-              src="/images/trace.svg"
-              alt="trace"
+            href="https://github.com/rookie-ninja/rk-entry"
+            src="/images/trace.svg"
+            alt="trace"
           />
         </LogoRow>
       </LogoContainer>
@@ -177,7 +177,9 @@ const Container = styled.div`
   background-color: #f6f9fc;
   padding: 2rem;
   display: grid;
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
+  min-width: 860px;
   text-align: center;
   justify-items: center;
 `;
