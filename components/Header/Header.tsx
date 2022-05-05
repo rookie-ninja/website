@@ -24,7 +24,7 @@ export default function Header() {
         >
           <AiOutlineGithub size="26px" />
         </IconWrap>
-        <IconWrap href="https://docs.rkdev.info/" target="_blank" rel="noreferrer">
+        <IconWrap href="https://docs.rkdev.info/docs" target="_blank" rel="noreferrer">
           <AiOutlineFileText size="26px" />
         </IconWrap>
         <IconWrap href="mailto:lark@pointgoal.io">
