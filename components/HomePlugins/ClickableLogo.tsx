@@ -10,7 +10,7 @@ type Props = {
 
 export default function ClickableLogo({ href, src, alt }: Props) {
   return (
-    <Container href={href}>
+    <Container href={href} target="_blank" rel="noreferrer">
       <Image
         src={src} // Route of the image file
         alt={alt}

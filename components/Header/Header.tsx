@@ -17,16 +17,24 @@ export default function Header() {
       </LogoWrap>
       <IntroWrap>Experience modulized golang microservice rk-boot!</IntroWrap>
       <IconsContainer>
-        <IconWrap href="https://github.com/rookie-ninja/rk-boot">
+        <IconWrap
+          href="https://github.com/rookie-ninja/rk-boot"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiOutlineGithub size="26px" />
         </IconWrap>
-        <IconWrap href="https://rkdev.info/">
+        <IconWrap href="https://rkdev.info/" target="_blank" rel="noreferrer">
           <AiOutlineFileText size="26px" />
         </IconWrap>
         <IconWrap href="mailto:lark@pointgoal.io">
           <AiOutlineMail size="26px" />
         </IconWrap>
-        <IconWrap href="https://join.slack.com/t/rk-syz1767/shared_invite/zt-186tn9o8k-Bn4apE6nhoFnC61h180I8w">
+        <IconWrap
+          href="https://join.slack.com/t/rk-syz1767/shared_invite/zt-186tn9o8k-Bn4apE6nhoFnC61h180I8w"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiOutlineSlack size="26px" />
         </IconWrap>
       </IconsContainer>

@@ -15,12 +15,16 @@ export default function HomeHero() {
         YAML.
       </Text>
       <ButtonGroup spacing="5">
-        <a href="https://rkdev.info/">
+        <a href="https://rkdev.info/" target="_blank" rel="noreferrer">
           <Button width="200px" colorScheme="teal">
             Get Started
           </Button>
         </a>
-        <a href="https://github.com/rookie-ninja/rk-boot">
+        <a
+          href="https://github.com/rookie-ninja/rk-boot"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Button width="200px" leftIcon={<FaGithub />}>
             GitHub
           </Button>
