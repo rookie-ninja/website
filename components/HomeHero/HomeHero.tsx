@@ -15,7 +15,7 @@ export default function HomeHero() {
         YAML.
       </Text>
       <ButtonGroup spacing="5">
-        <a href="https://rkdev.info/" target="_blank" rel="noreferrer">
+        <a href="https://docs.rkdev.info/" target="_blank" rel="noreferrer">
           <Button width="200px" colorScheme="teal">
             Get Started
           </Button>
