@@ -4,7 +4,36 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
 import styled from 'styled-components';
 
-let framework = 'gin';
+const demoUrlMap = new Map<string, string>([
+  [
+    'gin',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/gin/rk-demo.zip',
+  ],
+  [
+    'grpc',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/grpc/rk-demo.zip',
+  ],
+  [
+    'echo',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/echo/rk-demo.zip',
+  ],
+  [
+    'gf',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/gf/rk-demo.zip',
+  ],
+  [
+    'fiber',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/fiber/rk-demo.zip',
+  ],
+  [
+    'mux',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/mux/rk-demo.zip',
+  ],
+  [
+    'zero',
+    'https://raw.githubusercontent.com/rookie-ninja/rk-demo/master/packed/zero/rk-demo.zip',
+  ],
+]);
 
 export default function HomeMain() {
   const [framework, setFramework] = useState('gin');
@@ -25,8 +54,7 @@ ${framework}:
       logging:
         enabled: true
       prom:
-        enabled: true
-`;
+        enabled: true`;
 
   const handleOnChange = (value: string) => {
     setFramework(value);
@@ -58,9 +86,11 @@ ${framework}:
             <Radio value="mux">gorilla/mux</Radio>
             <Radio value="zero">zeromicro/go-zero</Radio>
           </RadioGroupContainer>
-          <Button colorScheme="blue" width="120px" size="sm">
-            Create
-          </Button>
+          <a download href={demoUrlMap.get(framework)}>
+            <Button colorScheme="blue" width="120px" size="sm">
+              Create
+            </Button>
+          </a>
         </LeftContent>
         <RightContent>
           <SyntaxHighlighter language="yaml" showLineNumbers style={atomDark}>
