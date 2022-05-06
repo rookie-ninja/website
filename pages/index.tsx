@@ -5,11 +5,16 @@ import { HomeInvitation } from 'components/HomeInvitation';
 import HomeMain from 'components/HomeMain';
 import HomePlugins from 'components/HomePlugins';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import styled from 'styled-components';
 
 const Home: NextPage = () => {
   return (
     <Container>
+      <Head>
+        <title>RK-Boot</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header />
       <HomeHero />
       <HomeMain />

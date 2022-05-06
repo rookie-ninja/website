@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Footer() {
   return (
     <Container>
-      <div>Opensource project maintained by rk-dev</div>
+      <p>Opensource project maintained by rk-dev</p>
     </Container>
   );
 }
