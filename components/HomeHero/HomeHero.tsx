@@ -10,9 +10,7 @@ export default function HomeHero() {
         Create golang microservice <GreenSpan>from YAML</GreenSpan>
       </Heading>
       <Text>
-        rk-boot is a simple, modular bootstrapper library that gives you the
-        ability to start golang microservice with popular opensource client from
-        YAML.
+        Build microservice with rk-boot and let the team take over clean and tidy code.
       </Text>
       <ButtonGroup spacing="5">
         <a href="https://docs.rkdev.info/docs" target="_blank" rel="noreferrer">
