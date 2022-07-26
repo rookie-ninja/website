@@ -13,7 +13,7 @@ export default function HomeHero() {
         Build microservice with rk-boot and let the team take over clean and tidy code.
       </Text>
       <ButtonGroup spacing="5">
-        <a href="https://docs.rkdev.info/docs" target="_blank" rel="noreferrer">
+        <a href="https://docs.rkdev.info" target="_blank" rel="noreferrer">
           <Button width="200px" colorScheme="teal">
             Get Started
           </Button>

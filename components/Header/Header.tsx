@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <Container>
       <LogoWrap>
-        <Image src="/images/rk-icon.png" height={40} width={40} alt="RK-BOOT" />
+        <Image src="/images/rk-icon.png" height={30} width={30} alt="RK-BOOT" />
         <p>RK-Boot</p>
       </LogoWrap>
       <IntroWrap>
@@ -27,7 +27,7 @@ export default function Header() {
           <AiOutlineGithub size="26px" />
         </IconWrap>
         <IconWrap
-          href="https://docs.rkdev.info/docs"
+          href="https://docs.rkdev.info"
           target="_blank"
           rel="noreferrer"
         >
