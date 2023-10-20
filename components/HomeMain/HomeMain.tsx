@@ -75,7 +75,7 @@ ${framework}:
             Choose a web framework to start with
           </Heading>
           <Text fontSize="12px" color="gray.500">
-            Please visite documentation for various plugins
+            Please visit documentation for various plugins
           </Text>
           <RadioGroupContainer defaultValue="gin" onChange={handleOnChange}>
             <Radio value="gin">gin-gonic/gin</Radio>
