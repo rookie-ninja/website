@@ -27,7 +27,7 @@ export default function Header() {
           <AiOutlineGithub size="26px" />
         </IconWrap>
         <IconWrap
-          href="https://docs.rkdev.info"
+          href="https://rkdocs.mofcloud.com"
           target="_blank"
           rel="noreferrer"
         >
